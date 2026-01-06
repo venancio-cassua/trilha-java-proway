@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seletores - JQuery</title>
+    <!-- JQuery -->
+    <script src="jquery/script.js"></script>
+    <!-- JS -->
+     <script>
+        // Função
+        /*
+         O jQuery diz que todo o código dentro dessa função só será executado
+         quando o documento HTML estiver totalmente carregado. Isso é importante
+         para garantir que todos os elementos da página estejam disponíveis para serem manipulados. 
+         */
+        $(document).ready(function(){
+            var campo = $("input").val();
+            var titulo = $("#titulo").html();
+            var subtitulo = $(".subtitulo").html();
+ 
+            alert(campo);
+            alert(titulo);
+            alert(subtitulo);
+        });
+     </script>
+</head>
+<body>
+    <input type="text" value="Campo Nome">
+    <h1 id="titulo">Título em H1</h1>
+    <h2 class="subtitulo">Título em H2</h2>
+</body>
+</html>

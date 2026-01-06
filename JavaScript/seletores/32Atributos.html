@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atributos</title>
+    <!--JS -->
+    <script>
+        // Função
+        function alterarLink(){
+            // Nota: Usamos getElementsByTagName porque "a" é uma tag HTML.
+
+            // O atributo href é usado para especificar o URL do link.
+
+            // Obter link
+            var link = document.getElementsByTagName("a")[0];
+
+            // Alterar o atributo href do link
+            link.href = "https://www.youtube.com.br";
+        }
+    </script>
+</head>
+<body>
+    <a href="https://www.google.com/">Clique aqui</a>
+    <button onclick="alterarLink()">Alterar link</button>
+</body>
+</html>

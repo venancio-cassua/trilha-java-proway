@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seletor Id</title>
+    <!-- JS -->
+    <script>
+        // Função para exibir o texto do elemento com o id "texto"
+        function exibirTexto() {
+            var campo = document.getElementById("campo");
+
+            alert(campo.value);
+
+            // Apagar o conteúdo do campo após exibir o alerta
+            campo.value = "";
+
+            // Nota: O método value é usado para obter ou definir o valor de elementos de formulário, como campos de entrada (input), áreas de texto (textarea) e seleções (select).
+
+            // O método innerHTML é usado para obter ou definir o conteúdo HTML de um elemento.
+        }
+    </script>
+</head>
+
+<body>
+    <input type="text" id="campo">
+    <button onclick="exibirTexto()">Clique aqui</button>
+
+</body>
+
+</html>

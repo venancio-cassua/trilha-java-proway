@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evento Teclado</title>
+    <!--JS-->
+    <script>
+        // onkeydown: Disparado quando uma tecla é pressionada
+
+        // onkeyup: Disparado quando uma tecla é liberada
+        function mensagem() {
+            var campo = document.getElementById("campo").value;
+
+            alert(campo);
+        }
+
+        // onkeypress: Disparado quando uma tecla é pressionada e liberada
+    </script>
+</head>
+<body>
+    <input type="text" id="campo" onkeyup="mensagem()">
+</body>
+</html>

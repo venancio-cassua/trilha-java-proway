@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evento Alteração</title>
+    <!--JS-->
+    <script>
+        function mensagem() {
+            // Obter o curso selecionado
+            var curso = document.getElementById("cursos").value;
+
+            // Exibir o alerta com o curso selecionado
+            alert("Você selecionou o curso: " + curso);
+        }
+    </script>
+
+</head>
+
+<body>
+    <select onchange="mensagem()" id="cursos">
+        <option>Java</option>
+        <option>JavaScript</option> 
+        <option>Html</option>
+        <option>Css</option>
+    </select>
+</body>
+
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animate - JQuery</title>
+    <!-- CSS -->
+    <style>
+        div {
+            width: 100px;
+            height: 80px;
+            background-color: red;
+            position: relative;
+        }
+    </style>
+
+    <!-- JQuery -->
+    <script src="jquery/script.js"></script>
+    <!-- JS -->
+     <script>
+        /*
+         O jQuery diz que todo o código dentro dessa função só será executado
+         quando o documento HTML estiver totalmente carregado. Isso é importante
+         para garantir que todos os elementos da página estejam disponíveis para serem manipulados. 
+         */
+        $(document).ready(function(){
+            // Efeito Animate
+
+            $("button").click(function(){
+                $("div").animate({
+                    left: '250px',
+                    height: '200px',
+                    width: '400px',
+                    opacity: 0.5
+                });
+            });
+        });
+     </script>
+</head>
+<body>
+    <button>Clique aqui</button>
+
+    <div></div>
+</body>
+</html>

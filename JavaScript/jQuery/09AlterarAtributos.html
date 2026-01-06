@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alterar Atributos - JQuery</title>
+    <!-- JQuery -->
+    <script src="jquery/script.js"></script>
+    <!-- JS -->
+     <script>
+        // Função
+        /*
+         O jQuery diz que todo o código dentro dessa função só será executado
+         quando o documento HTML estiver totalmente carregado. Isso é importante
+         para garantir que todos os elementos da página estejam disponíveis para serem manipulados. 
+         */
+
+         // Ao carregar o documento
+        $(document).ready(function(){
+            
+            // Selecionar e alterar o atributo 'src' da imagem
+            $("img").attr("width","500");
+            $("img").attr("title","Alterando title com jQuery");
+        });
+     </script>
+</head>
+<body>
+    <img src="proway.png" width="100" title="Proway">
+</body>
+</html>

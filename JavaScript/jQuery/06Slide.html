@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Efeito Slide - JQuery</title>
+    <!-- JQuery -->
+    <script src="jquery/script.js"></script>
+    <!-- JS -->
+     <script>
+        // Função
+        /*
+         O jQuery diz que todo o código dentro dessa função só será executado
+         quando o documento HTML estiver totalmente carregado. Isso é importante
+         para garantir que todos os elementos da página estejam disponíveis para serem manipulados. 
+         */
+        $(document).ready(function(){
+            // Ocultar
+            $(".ocultar").click(function(){
+                $(".Mensagem").slideUp(2000);
+            });
+            // Exibir
+            $(".exibir").click(function(){
+                $(".Mensagem").slideDown(2000);
+            });
+        });
+     </script>
+</head>
+<body>
+    <h1 class="exibir">Exibir</h1>
+    <h1 class="ocultar">Ocultar</h1>
+    <hr>
+    <h1 class= "Mensagem">Olá!</h1>
+</body>
+</html>

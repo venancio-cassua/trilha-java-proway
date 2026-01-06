@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Efeito Fade - JQuery</title>
+    <!-- JQuery -->
+    <script src="jquery/script.js"></script>
+    <!-- JS -->
+     <script>
+        // Função
+        /*
+         O jQuery diz que todo o código dentro dessa função só será executado
+         quando o documento HTML estiver totalmente carregado. Isso é importante
+         para garantir que todos os elementos da página estejam disponíveis para serem manipulados. 
+         */
+        $(document).ready(function(){
+            //Ocultar H1 quando for inicializado
+            $("h1").css("display", "none");
+            //Exibir com efeito fadeIn
+            $("#exibir").click(function(){
+                $("h1").fadeIn("slow");
+            });
+
+            //Ocultar com efeito fadeOut
+            $("#ocultar").click(function(){
+                $("h1").fadeOut(3000);
+            });
+        });
+     </script>
+</head>
+<body>
+    <button id="exibir">Exibir</button>
+    <button id="ocultar">Ocultar</button>
+    <hr>
+    <h1>Aprendendo jQuery</h1>
+</body>
+</html>

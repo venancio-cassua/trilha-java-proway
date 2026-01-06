@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vetor de Objetos</title>
+    <!-- JS -->
+    <script>
+        // Exemplo de vetor de objetos
+
+        // Declarando um vetor de objetos representando pessoas
+        var pessoas = [
+            { nome: "Ana", idade: 28 },
+            { nome: "Bruno", idade: 34 },
+            { nome: "Carla", idade: 22 }
+        ];
+
+        // Acessando e exibindo os dados das pessoas no vetor
+        for (var i = 0; i < pessoas.length; i++) {
+            window.alert("Nome: " + pessoas[i].nome + ", Idade: " + pessoas[i].idade);
+        }   
+        // Declarando um objeto de cursos
+        var cursos = [
+            { titulo: "HTML", duracao: "30 horas" },
+            { titulo: "CSS", duracao: "40 horas" },
+            { titulo: "JavaScript", duracao: "50 horas" }
+        ];
+        // Acessando e exibindo os dados dos cursos no vetor
+        for (var j = 0; j < cursos.length; j++) {
+            window.alert("Curso: " + cursos[j].titulo + ", Duração: " + cursos[j].duracao);
+        }
+        
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

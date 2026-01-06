@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercitar</title>
+    <script>
+        var a = 10;
+
+        window.alert(a>0);
+
+        if(a > 10){
+            window.alert("São iguais");
+        }
+
+        $(document).ready(function(){
+            $("button").click(function(){
+                $('h1').animate({
+                    opacity: 0.25,
+                    left: '50px',
+                    height: '150px',
+                    width: '150px'
+                });
+            });
+        });
+    </script>
+</head>
+<body>
+    <h1>Exercitando</h1>
+    <button>Clique aqui</button>
+
+</body>
+</html>

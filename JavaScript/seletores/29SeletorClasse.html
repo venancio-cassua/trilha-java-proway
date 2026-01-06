@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seletor de Classe</title>
+    <!-- JS -->
+     <script>
+        // Função para exibir o texto dos elementos com a classe "texto"
+        function exibirTexto(){
+        var texto = document.getElementsByClassName("texto")[0];
+
+        alert(texto.innerHTML);
+        }
+     </script>
+</head>
+<body>
+    <button onclick="exibirTexto()">Clique aqui</button>
+    <h1 class="texto">Titulo em h1</h1>
+    <h2 class="texto">Titulo em h2</h2>
+    <p class="texto">Parágrafo</p>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css - JQuery</title>
+    <!-- JQuery -->
+    <script src="jquery/script.js"></script>
+    <!-- JS -->
+     <script>
+        // Função
+        /*
+         O jQuery diz que todo o código dentro dessa função só será executado
+         quando o documento HTML estiver totalmente carregado. Isso é importante
+         para garantir que todos os elementos da página estejam disponíveis para serem manipulados. 
+         */
+        $(document).ready(function(){
+            $("h1").css({"color": "blue", 
+            "background-color": "yellow", 
+            "border": "2px solid red", 
+            "padding": "10px"
+        });
+        });
+     </script>
+</head>
+<body>
+    <h1>Utilizando Css com JQuery</h1>
+</body>
+</html>
