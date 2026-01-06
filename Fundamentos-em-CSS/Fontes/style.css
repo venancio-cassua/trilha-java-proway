@@ -1,0 +1,53 @@
+/*
+h2{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    color: #daa0a0;
+}
+
+.texto-vermelho{
+    color: red;
+    @font-face {
+        font-family: "nome da fonte";
+        src: url("caminho/para/a/fonte.ttf");
+    }
+}   
+
+.texto-vermelho{
+    font-style: italic;
+    font-size: 16px;
+    font-size: 2rem;
+}
+
+main p{
+    text-indent: 2rem;
+}
+
+h2#titulo-primeira-aula{
+    text-align: center;
+    text-decoration: underline;
+}
+    */
+/* Estilizando links 
+Usando pseudo-classes ou pseudo-seletores */
+*/
+
+/* Link não visitado */
+a:link{
+    color: blue;
+}
+/* Link visitado */
+a:visited{
+    color: purple;
+}
+/* Link quando o mouse está sobre ele */
+a:hover{
+    color: rgb(213, 211, 219);
+}
+a:active{
+    color: green;
+}
+
+body{
+    font-size: 18px;
+}

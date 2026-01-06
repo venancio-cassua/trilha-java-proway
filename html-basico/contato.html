@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+</head>
+
+<body>
+    <header>
+        <h1>Contato</h1>
+        <nav>
+            <h2>Navegação principal</h2>
+            <span>
+                <a href="pag2.html">Início</a>
+            </span>
+            -
+            <span>
+                <a href="sobre.html">Sobre mim</a>
+            </span>
+            -
+            <span>
+                <a href="contatos.html">Contatos</a>
+            </span>
+        </nav>
+    </header>
+    <main>
+        <form>
+            <input type="text" name="nome" placeholder="Nome"><br>
+            <input type="email" name="email" placeholder="E-mail"><br>
+            <input type="tel" name="tel" placeholder="Telefone"><br>
+            <input type="number" name="idade" placeholder="Idade"><br>
+            <input type="url" name="Linkedin" placeholder="Linkedin url"><br><!-- Adicionado campo de URL para Linkedin. Ou valida a URL
+            -->
+            <input type="range" name="satisfacao" min="0" max="10" step="0.1"><br>
+
+            <!--Checkbox é um campo de input que habilita a possibilidade de selecionar valores-->
+
+            <input type="checkbox" name="dias-da-semana" value="2"> Segunda-feira<br>
+            <input type="checkbox" name="dias-da-semana" value="3">
+            Terça-feira<br>
+            <input type="checkbox" name="dias-da-semana" value="4"> Quarta-feira<br>
+            <input type="checkbox" name="dias-da-semana" value="5"> Quinta-feira<br>
+            <input type="checkbox" name="dias-da-semana" value="6"> Sexta-feira<br>
+            <input type="checkbox" name="dias-da-semana" value="7"> Sábado<br>
+            <input type="checkbox" name="dias-da-semana" value="1"> Domingo<br>
+
+            <input type="radio" name="hora" value="manha">Manhã
+            <input type="radio" name="hora" value="tarde">Tarde
+            <input type="radio" name="hora" value="noite">Noite<br>
+
+            <textarea name="mensagem" id="" cols="25" rows="5"></textarea><br>
+            <!--textarea é a Área de texto para mensagens maiores-->
+
+            <select name="cidades" id="">
+                <option value="">Selecione a cidade</option>
+                <option value="Blumenau">Blumenau</option>
+                <option value="Florianopolis">Florianopolis</option>
+                <option value="Joinville">Joinville</option>
+            </select><br><br>
+
+            <!--select cria uma lista de opções para o usuário escolher-->
+
+            <!--datalist cria uma lista de sugestões para o usuário enquanto ele digita-->
+            <input list="cidade" name="cidade">
+            <datalist id="cidade">
+                <option value="Blumenau">
+                <option value="Florianopolis">
+                <option value="Joinville">
+            </datalist><br>
+
+            <button type="button">Outras ação</button>
+            <!--button cria um botão que pode ser personalizado-->
+            <button type="reset">Limpar</button>
+            <!--Botão para limpar o formulário-->
+            <button type="submit">Enviar</button>
+            <!--Botão de envio do formulário-->
+        </form>
+    </main>
+</body>
+
+</html>

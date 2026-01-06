@@ -1,0 +1,19 @@
+.box {
+    box-sizing: border-box;
+    width: 5rem;
+    height: 5rem;
+    font-size: 3rem;
+    padding: 5rem 2rem;
+}
+section {
+    display: block;
+}
+.verde {
+    background-color: green;
+}
+.azul {
+    background-color: blue;
+}
+.vermelho {
+    background-color: red;
+}
