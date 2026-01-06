@@ -1,4 +1,4 @@
-Trilha Java – Proway + Capgemini
+# Trilha Java – Proway + Capgemini
 
 Este repositório reúne todo o conteúdo desenvolvido durante a trilha de Java, um curso oferecido pela Proway em parceria com a Capgemini.
 
